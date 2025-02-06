@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "Avent",
-    "slug": "avent",
+    "name": "Travel Intelligence Guide",
+    "slug": "travel_intelligence_guide",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -17,9 +17,10 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.freelance.apk"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +32,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "5f2bfd46-e143-451b-b16a-3f41d1c189db"
+      }
+    },
+    "owner": "prashant_1924"
   }
 }

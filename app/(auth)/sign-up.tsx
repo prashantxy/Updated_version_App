@@ -18,10 +18,9 @@ const SignUp = () => {
 
   const onSignUpPress = async () => {
     
-      // Navigate to the main app
-      router.replace("/(tabs)/mytrip");
+      // Navigate to the main app 
+      router.replace("/(tabs)/mytrip"); 
     
-        
   };
 
   return (

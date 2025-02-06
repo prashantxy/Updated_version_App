@@ -62,7 +62,7 @@ const SelectDates = () => {
             startFromMonday={true}
             allowRangeSelection={true}
             minDate={new Date()}
-            onDateChange={onDateChange}
+            onDateChange={onDateChange} 
             selectedDayColor="#8b5cf6"
             selectedDayTextColor="#ffffff"
             todayBackgroundColor="#f2e6ff"

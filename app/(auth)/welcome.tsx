@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, Image } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import React, { useRef, useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { router } from "expo-router";
@@ -10,7 +10,7 @@ const Onboarding = () => {
   const swiperRef = useRef<Swiper>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const isLastSlide = activeIndex === onboarding.length - 1;
-
+  
   return (
     <SafeAreaView className="flex h-full items-center justify-between bg-white">
       <TouchableOpacity
@@ -21,9 +21,9 @@ const Onboarding = () => {
       >
         <Text className="text-purple-500 text-md font-outfit-bold">Skip</Text>
       </TouchableOpacity>
-
+  
       <Swiper
-        ref={swiperRef}
+        ref={swiperRef} 
         loop={false}
         dot={<View className="w-8 h-1 mx-1 bg-slate-50 rounded-full" />}
         activeDot={<View className="w-8 h-1 mx-1 bg-purple-500 rounded-full" />}
@@ -43,7 +43,7 @@ const Onboarding = () => {
           </View>
         ))}
       </Swiper>
-
+  
       <View className="w-full px-6 pb-6">
         <CustomButton
           title={isLastSlide ? "Get Started" : "Next"}
@@ -51,11 +51,11 @@ const Onboarding = () => {
             isLastSlide
               ? router.replace("/(auth)/sign-up")
               : swiperRef.current?.scrollBy(1)
-          }
+          } 
         />
       </View>
     </SafeAreaView>
   );
 };
-
-export default Onboarding;
+   
+export default Onboarding; 
