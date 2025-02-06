@@ -15,7 +15,7 @@ const GenerateTrip = () => {
 
   const router = useRouter();
 
-  useEffect(() => {
+  useEffect(() => {  
     generateTrip();
   }, []);
 

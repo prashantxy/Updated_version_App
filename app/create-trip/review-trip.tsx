@@ -92,12 +92,12 @@ const ReviewTrip = () => {
 
       <View className="p-6">
         <CustomButton
-          title="Build an itinerary"
-          onPress={() => router.replace("/generate-trip")}
+          title="Done" 
+          onPress={() => router.replace("/mytrip")}
         />
       </View>
     </SafeAreaView>
   );
 };
-
+ 
 export default ReviewTrip;

@@ -2,9 +2,8 @@
   "expo": {
     "name": "Travel Intelligence Guide",
     "slug": "travel_intelligence_guide",
-    "version": "1.0.0",
+    "version": "1.0.1",  
     "orientation": "portrait",
-    
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -17,10 +16,10 @@
     },
     "android": {
       "adaptiveIcon": {
-        
         "backgroundColor": "#ffffff"
       },
-      "package": "com.freelance.apk"
+      "package": "com.freelance.apk",
+      "versionCode": 2  
     },
     "web": {
       "bundler": "metro",
