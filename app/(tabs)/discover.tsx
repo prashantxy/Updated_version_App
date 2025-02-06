@@ -2,7 +2,7 @@ import { View, Text, ScrollView, Linking } from "react-native";
 import React from "react";
 import CustomButton from "@/components/CustomButton";
 
-// Random places data with coordinates
+// Random places data with coordinates 
 const RANDOM_PLACES = [
   { name: "Eiffel Tower, Paris", latitude: 48.8584, longitude: 2.2945 },
   { name: "Statue of Liberty, NYC", latitude: 40.6892, longitude: -74.0445 },
@@ -17,7 +17,7 @@ const RANDOM_PLACES = [
 ];
 
 const Discover = () => {
-  // Function to open Google Maps with the place's coordinates
+  // Function to open Google Maps with the place's coordinates 
   const handleOpenMap = (latitude: number, longitude: number) => {
     const url = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
     Linking.openURL(url);
